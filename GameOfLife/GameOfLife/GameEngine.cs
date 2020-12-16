@@ -12,7 +12,6 @@ namespace GameOfLife
         private bool[,] field;
         private readonly int columns;
         private readonly int rows;
-        
 
         public GameEngine(int rows, int columns, int density)
         {
@@ -29,7 +28,7 @@ namespace GameOfLife
             }
         }
 
-        public void NextGeneration()     //newField
+        public void NextGeneration()     
         {
             var newField = new bool[columns, rows];
             for (int x = 0; x < field.GetLength(0); x++)
@@ -58,16 +57,8 @@ namespace GameOfLife
 
         }
 
-        public bool[,] GetCurrentGeneration()       //Copy
+        public bool[,] GetCurrentGeneration()      
         {
-            //var result = new bool[columns,rows];
-            //for (int x = 0; x < columns; x++)
-            //{
-            //    for (int y = 0; y < rows; y++)
-            //    {
-            //        result[x, y] = field[x, y]; 
-            //    }
-            //}
             return field;
         }
 
@@ -89,7 +80,6 @@ namespace GameOfLife
                     }
                 }
             }
-
             return count;
         }
 

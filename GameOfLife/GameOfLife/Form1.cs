@@ -44,7 +44,6 @@ namespace GameOfLife
             pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             graphics = Graphics.FromImage(pictureBox1.Image);
             timer1.Start();
-
         }
 
         private void DrawGeneration()
@@ -77,8 +76,6 @@ namespace GameOfLife
 
             nudResolution.Enabled = true;
             nudDensity.Enabled = true;
-
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
